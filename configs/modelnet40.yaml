@@ -1,0 +1,30 @@
+# ------ Load Cache and Features ------
+load_cache: False
+load_pre_feat: False
+
+#load_cache: True
+#load_pre_feat: True
+
+# data load
+NAME: ModelNet
+DATA_PATH: DATA/modelnet40/modelnet40_normal_resampled
+NUM_CATEGORY: 40
+USE_NORMALS: FALSE
+
+# data efficiency
+n_clusters: 1
+
+# ------ Hyperparamters ------
+search_hp: True
+# search_hp: False
+
+search_scale: [15,30]
+search_step: [200, 20]
+
+init_beta: 10
+init_alpha: 20
+
+
+# ------ Basic Config ------
+dataset: 'modelnet40'
+augment_epoch: 10
